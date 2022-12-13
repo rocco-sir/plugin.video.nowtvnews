@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.nowtvnews" name="Now TV News Live" version="1.0.1" provider-name="Kenelm Ng">
+<addon id="plugin.video.nowtvnews" name="Now TV News Live" version="1.0.2" provider-name="PCCW">
     <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.requests" version="2.6.0"/>
-        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.simplejson"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides> <!-- remember to also change this accordingly you your plugin! -->
+        <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <summary lang="en">Now TV News</summary>        
         <description lang="en">Now TV News Live</description>
         <license>Unlicence</license>
-        <source>http://kenelm.happyforever.com</source>
-        <website>http://kenelm.happyforever.com</website>
-        <email>kenelm.ng@gmail.com</email>
+        <source>http://github.com</source>
+        <website>http://github.com</website>
+        <email>nil@nil</email>
+        <news>v1.0.2
+      [new] update to python 3
+      [fix] some fix
+    </news>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+    </assets>
     </extension>
 </addon>
